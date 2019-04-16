@@ -6,7 +6,7 @@ class UserInfo(models.Model):
     pwd = models.CharField(max_length = 32,verbose_name='密码')
     
     class Meta:
-        ordering = ('user',)
+        ordering = ('id',)
         verbose_name = u'用户表'
         verbose_name_plural = verbose_name
 

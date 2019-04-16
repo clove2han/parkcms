@@ -18,11 +18,11 @@ from django.urls import path
 from users import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'',views.index),
-#把post/开头的网址后面的字符串都找出来。
-    path(r'index/', views.index),
-    path(r'login/', views.login),
-    path(r'userinfo/', views.userinfo),
-    path(r'adduser/', views.adduser),
-    path(r'adduser_html/', views.adduser_html),
+    path(r'',views.index,name='index'),
+    path(r'index', views.index,name='index'),
+    path(r'login', views.login,name='login'),
+    path(r'login_method', views.login_method,name='login_method'),    
+    path(r'userinfo', views.userinfo,name='userinfo'),
+    path(r'adduser', views.adduser,name='adduser'),
+    path(r'adduser_method', views.adduser_method,name='adduser_method'),
 ]

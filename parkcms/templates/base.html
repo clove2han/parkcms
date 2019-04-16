@@ -27,10 +27,6 @@
 		<link rel="stylesheet" href={% static 'css/ace-rtl.min.css' %} />
 		<link rel="stylesheet" href={% static 'css/ace-skins.min.css' %} />
 
-		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href={% static parkmanage %} />
-		<![endif]-->
-
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
@@ -92,7 +88,7 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="#">
+									<a href="/login">
 										<i class="icon-off"></i>
 										退出
 									</a>
@@ -193,7 +189,7 @@
 								</li>
 
 								<li>
-									<a href="/adduser_html">
+									<a href="/adduser">
 										<i class="icon-double-angle-right"></i>
 										添加员工
 									</a>
@@ -290,12 +286,6 @@
 		</script>
 
 		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src={% static parkmanage %}>"+"<"+"script>");
-</script>
-<![endif]-->
 
 		<script type="text/javascript">
 			if("ontouchend" in document) document.write("<script src={% static 'js/jquery.mobile.custom.min.js' %}>"+"<"+"script>");
