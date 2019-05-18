@@ -18,11 +18,19 @@ from django.urls import path
 from users import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'',views.index,name='index'),
-    path(r'index', views.index,name='index'),
+    path(r'index',views.index,name='index'),
     path(r'login', views.login,name='login'),
-    path(r'login_method', views.login_method,name='login_method'),    
-    path(r'userinfo', views.userinfo,name='userinfo'),
-    path(r'adduser', views.adduser,name='adduser'),
-    path(r'adduser_method', views.adduser_method,name='adduser_method'),
+    path(r'welcome', views.welcome,name='welcome'), 
+    
+    path(r'member-list', views.memberlist,name='memberlist'), 
+    path(r'member-del', views.memberdel,name='memberdel'), 
+    path(r'member-add', views.memberadd,name='memberadd'),   
+    
+    
+    path(r'order-list', views.orderlist,name='orderlist'),   
+    path(r'order-add', views.orderadd,name='orderadd'), 
+        
+    path(r'admin-list', views.adminlist,name='adminlist'),    
+    path(r'admin-edit', views.adminedit,name='adminedit'), 
+    path(r'admin-add', views.adminadd,name='adminadd'),  
 ]
